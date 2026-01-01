@@ -81,6 +81,14 @@
         .skip-link:focus {
             top: 0;
         }
+
+        /* Handy: Hintergrund etwas nach rechts schieben,
+           damit Monteur + Rohre besser sichtbar sind */
+        @media (max-width: 768px) {
+            .hero-section {
+                background-position: 70% center !important;
+            }
+        }
     </style>
 </head>
 <body class="font-sans antialiased">
@@ -105,7 +113,6 @@
                     <a href="/hausverwaltungen.html" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Hausverwaltungen</a>
                     <a href="/sanierung.html" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Sanierung</a>
                     <a href="/notdienst.html" class="block py-2 px-3 text-latt-red hover:text-red-700 font-bold transition">24h Notdienst</a>
-                    <a href="/ueber-uns.html" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Über uns</a>
                     <a href="/jobs.html" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Jobs</a>
                     <a href="/kontakt.html" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Kontakt</a>
                     <a href="tel:+4314813099" class="bg-latt-red text-white px-6 py-2 rounded-lg font-bold hover:bg-red-700 transition focus:outline-none focus:ring-2 focus:ring-latt-red focus:ring-offset-2">
@@ -120,7 +127,6 @@
                 <a href="/hausverwaltungen.html" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Hausverwaltungen</a>
                 <a href="/sanierung.html" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Sanierung</a>
                 <a href="/notdienst.html" class="block py-2 px-3 text-latt-red hover:bg-gray-100 rounded font-bold">24h Notdienst</a>
-                <a href="/ueber-uns.html" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Über uns</a>
                 <a href="/jobs.html" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Jobs</a>
                 <a href="/kontakt.html" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Kontakt</a>
                 <a href="tel:+4314813099" class="block bg-latt-red text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 text-center">
@@ -131,45 +137,54 @@
     </header>
 
     <main id="main-content">
-        <section class="relative py-16 lg:py-24 overflow-hidden min-h-[500px] flex items-center" style="background-image: url('/assets/images/hero-installateur.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-            <div class="absolute inset-0 bg-black/30"></div>
-            <div class="container mx-auto px-4 relative z-10">
-                <div class="max-w-4xl mx-auto text-center bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-8 lg:p-12 border border-white/20">
-                    <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-                        24h Notdienst – Elektriker & Installateur in Wien
+        <!-- HERO MIT HINTERGRUND-BILD -->
+        <section 
+            class="relative hero-section py-10 sm:py-14 lg:py-24 bg-cover bg-center"
+            style="background-image: url('/assets/images/hero-installateur.jpg');">
+            
+            <!-- leichte Abdunklung -->
+            <div class="absolute inset-0 bg-black/25"></div>
+
+            <div class="relative container mx-auto px-4 flex justify-center">
+                <!-- Hero-Card: auf Handy schmäler, damit man mehr Hintergrund sieht -->
+                <div class="hero-card w-10/12 sm:w-full max-w-sm sm:max-w-3xl bg-white/92 rounded-3xl shadow-xl px-4 py-5 sm:px-8 sm:py-8 text-center">
+                    <h1 class="text-xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-6">
+                        24h Notdienst – Elektriker &amp; Installateur in Wien
                     </h1>
-                    <p class="text-xl lg:text-2xl text-gray-700 mb-8 font-medium">
-                        Meisterbetrieb für Elektro-, Gas-, Wasser- & Heizungsinstallationen seit über 70 Jahren
+                    <p class="text-sm sm:text-xl lg:text-2xl text-gray-700 mb-4 sm:mb-8">
+                        Meisterbetrieb für Elektro-, Gas-, Wasser- &amp; Heizungsinstallationen seit über 70 Jahren
                     </p>
-                    <div class="mb-8">
-                        <p class="text-gray-600 mb-4 font-semibold uppercase tracking-wider">Rund um die Uhr für Sie erreichbar:</p>
-                        <a href="tel:+4314813099" class="text-5xl lg:text-6xl font-bold text-latt-red hover:text-red-700 transition inline-block mb-6">
-                            01/481 30 99
+
+                    <p class="text-gray-600 mb-2 sm:mb-3 font-medium text-[11px] sm:text-sm tracking-wide uppercase">
+                        Rund um die Uhr für Sie erreichbar:
+                    </p>
+                    <a href="tel:+4314813099" class="text-2xl sm:text-4xl lg:text-5xl font-bold text-latt-red hover:text-red-700 transition inline-block mb-4 sm:mb-6">
+                        01/481 30 99
+                    </a>
+                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-4 sm:mb-6">
+                        <a href="tel:+4314813099" class="bg-latt-red text-white px-6 sm:px-8 py-3 rounded-lg font-bold text-sm sm:text-lg hover:bg-red-700 transition focus:outline-none focus:ring-2 focus:ring-latt-red focus:ring-offset-2 w-full sm:w-auto">
+                            ☎ Jetzt anrufen
                         </a>
-                        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                            <a href="tel:+4314813099" class="bg-latt-red text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-700 transition focus:outline-none focus:ring-2 focus:ring-latt-red focus:ring-offset-2 w-full sm:w-auto shadow-lg">
-                                ☎ Jetzt anrufen
-                            </a>
-                            <a href="/kontakt.html" class="bg-latt-blue text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-latt-blue focus:ring-offset-2 w-full sm:w-auto shadow-lg">
-                                📧 Angebot anfordern
-                            </a>
-                        </div>
+                        <a href="/kontakt.html" class="bg-latt-blue text-white px-6 sm:px-8 py-3 rounded-lg font-bold text-sm sm:text-lg hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-latt-blue focus:ring-offset-2 w-full sm:w-auto">
+                            📧 Angebot anfordern
+                        </a>
                     </div>
-                    <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-800 font-medium">
+
+                    <div class="flex flex-wrap justify-center gap-2 sm:gap-3 text-[11px] sm:text-sm text-gray-700">
                         <span class="flex items-center">
-                            <svg class="w-5 h-5 mr-2 text-latt-red" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-4 h-4 mr-2 text-latt-red" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                             </svg>
-                            Staatlich ausgezeichnet
+                            Staatlich ausgezeichnetes Unternehmen
                         </span>
                         <span class="flex items-center">
-                            <svg class="w-5 h-5 mr-2 text-latt-red" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-4 h-4 mr-2 text-latt-red" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                             </svg>
                             25 Mitarbeiter
                         </span>
                         <span class="flex items-center">
-                            <svg class="w-5 h-5 mr-2 text-latt-red" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-4 h-4 mr-2 text-latt-red" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                             </svg>
                             Über 70 Jahre Erfahrung
@@ -217,7 +232,7 @@
                         </div>
                         <h3 class="text-xl font-bold text-gray-900 mb-3">Installateur</h3>
                         <p class="text-gray-600 mb-4">
-                            Thermenservice, Gas-Überprüfung, Heizung, Wasser & Sanitär
+                            Thermenservice, Gas-Überprüfung, Heizung, Wasser &amp; Sanitär
                         </p>
                         <a href="/dienstleistungen.html#installateur" class="text-latt-red font-semibold hover:text-red-700 inline-flex items-center">
                             Mehr erfahren
@@ -333,7 +348,7 @@
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <h3 class="text-white font-bold text-lg mb-4">Latt & Co GmbH</h3>
+                    <h3 class="text-white font-bold text-lg mb-4">Latt &amp; Co GmbH</h3>
                     <p class="mb-2">Wattgasse 49</p>
                     <p class="mb-2">1160 Wien</p>
                     <p class="mb-2">
@@ -362,8 +377,7 @@
                 <div>
                     <h3 class="text-white font-bold text-lg mb-4">Informationen</h3>
                     <ul class="space-y-2">
-                        <li><a href="/ueber-uns.html" class="hover:text-white transition">Über uns</a></li>
-                        <li><a href="/jobs.html" class="hover:text-white transition">Jobs & Karriere</a></li>
+                        <li><a href="/jobs.html" class="hover:text-white transition">Jobs &amp; Karriere</a></li>
                         <li><a href="/lehrlinge.html" class="hover:text-white transition">Lehrlinge</a></li>
                         <li><a href="/kontakt.html" class="hover:text-white transition">Kontakt</a></li>
                         <li><a href="/impressum.html" class="hover:text-white transition">Impressum</a></li>
@@ -373,7 +387,7 @@
             </div>
             <div class="border-t border-gray-700 pt-8 text-sm text-center">
                 <p class="mb-2">
-                    © 2025 Latt & Co GmbH. Alle Rechte vorbehalten. | 
+                    © 2025 Latt &amp; Co GmbH. Alle Rechte vorbehalten. | 
                     UID: ATU 46513606 | 
                     FN 175913x | 
                     Mitglied der <a href="https://www.wko.at" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">Wirtschaftskammer Wien</a>

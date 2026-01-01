@@ -1,0 +1,81 @@
+DU BIST EIN SENIOR FRONTEND-DEV. Arbeite in diesem Repo und ändere/erstelle Dateien direkt.
+
+ZIEL:
+1) Erstelle eine neue Seite "Über uns" als HTML-Datei im gleichen Stil wie die bestehende Website (exakt gleiche Farben, Fonts, Font-Weights, Font-Sizes, Button-Styles, Abstände, Header/Footer, Links, Hover/Active States).
+2) Füge im Header/Nav der STARTSEITE einen neuen Menüpunkt "Über uns" EIN – und zwar exakt zwischen "24h Notdienst" und "Jobs".
+3) Wenn Header/Nav auf mehreren Seiten dupliziert ist (z.B. in mehreren .html Dateien), aktualisiere die Navigation überall identisch, damit die Menüstruktur konsistent bleibt.
+
+WICHTIG: DESIGN-TREUE
+- NICHTS am globalen Design erfinden.
+- Lies zuerst die bestehende Startseite (index.html) und alle genutzten Styles (Tailwind config, CSS-Dateien, inline styles, Fonts).
+- Verwende EXAKT die vorhandenen Klassen/Variablen/Farben (keine neuen Farbcodes, keine neue Schrift importieren).
+- Nutze dieselben Komponenten (Header, Mobile-Menü, Footer) durch Copy/Paste aus index.html, damit es 1:1 passt.
+- Wenn es eine bestehende Farbpalette gibt (z.B. CSS-Variablen oder Tailwind extend colors), verwende diese exakt.
+
+BILDER (werden vom User hochgeladen):
+- Hero-Startbild "Unsere Autos": /assets/images/ueber-uns-autos.jpg
+- Chef-Foto "KommR Meister Andreas Staudinger": /assets/images/chef-andreas-staudinger.jpg
+Baue die Seite so, dass diese Bildpfade verwendet werden. (Falls die Dateien nicht existieren, soll ein alt Text erscheinen, aber keine Layout-Zerstörung.)
+
+DATEI-ANFORDERUNGEN:
+A) Neue Seite anlegen:
+- Datei: latt/ueber-uns.html (gleiches Level wie index.html in diesem Projekt)
+- Nutze den bestehenden Header/Nav und Footer aus index.html unverändert (nur aktiven Menüpunkt markieren).
+- Setze <title> und meta description passend.
+- Verwende die gleichen Scripts (z.B. /js/main.js) wie die anderen Seiten.
+
+B) NAV-LINK einfügen:
+- In der Desktop-Navigation: Link "Über uns" exakt zwischen "24h Notdienst" und "Jobs"
+- In der Mobile-Navigation: Link "Über uns" an derselben Position
+- Link-Ziel: /ueber-uns.html
+- Aktiver Zustand auf ueber-uns.html: "Über uns" soll als aktiv angezeigt werden (genau so wie es bei aktiven Menüpunkten der bestehenden Seite gelöst ist).
+
+INHALT "ÜBER UNS" (Text soll professionell und Wiener Handwerksbetrieb-typisch klingen, nicht zu lang, aber überzeugend):
+- Verwende Fakten & Formulierungen aus latt.at und "Internet" (ohne zu übertreiben).
+- Baue diese Kernaussagen ein:
+  * Meisterbetrieb für Elektro-, Gas-, Wasser- und Heizungsinstallationen sowie Sanierungen
+  * Standort: 1160 Wien (Wattgasse 49)
+  * Gegründet vor über 70 Jahren
+  * 25 Mitarbeiter im Außen- und Innendienst, ausschließlich Eigenpersonal (keine Leiharbeitskräfte)
+  * 24h-Notdienst für elektrische und sanitäre Störungen / dringende Notfälle
+  * Staatlich ausgezeichnetes Unternehmen / Träger des Staatswappens (mit kurzer, seriöser Erklärung)
+  * Hausverwaltungsbetreuung: Betreuung von über ca. 1000 Wohnhäusern in Wien (als Referenz/Kompetenz)
+  * Geschäftsführer/Chef: KommR (Kommerzialrat) Meister Andreas Staudinger (mit Foto)
+  * Bürozeiten: Mo–Do 07:00–16:00, Fr 07:00–13:00
+  * Call-to-Action: Telefon +43 1 481 30 99 + Kontaktseite verlinken
+
+SEITENSTRUKTUR (Layout soll zu deiner bestehenden Startseite passen):
+1) HERO SECTION:
+- Vollbreit, mit dem Autos-Bild als Hintergrund/Startbild (ueber-uns-autos.jpg)
+- Overlay (gleiche Technik wie bestehende Hero falls vorhanden)
+- Headline "Über uns" + Subline (Meisterbetrieb seit über 70 Jahren in Wien)
+- Primary CTA Button (Telefon/Notdienst) im bestehenden Button-Style
+
+2) "Über die Firma" / "Wer wir sind":
+- 2-Spalten Layout (auf Mobile 1 Spalte)
+- Links Text, rechts Key-Facts Box/Kacheln mit Icons/Checks (aber nur wenn solche Stilmittel bereits im Projekt existieren)
+
+3) "Staatliche Auszeichnung":
+- Abschnitt mit kurzer Erklärung + ggf. Badge/Logo-Platzhalter (nur wenn bereits im Projekt ähnlich vorhanden)
+
+4) "Unser Chef":
+- Abschnitt mit Foto (chef-andreas-staudinger.jpg) + kurzer Text über KommR Meister Andreas Staudinger
+- Sauberes, seriöses Layout
+
+5) "Unsere Leistungen" (Kurz):
+- Verlinke auf bestehende Seiten (Dienstleistungen/Notdienst/Kontakt), nur wenn diese Seiten im Projekt existieren, sonst weglassen.
+
+6) CTA am Ende:
+- „Jetzt anrufen“ + „Kontakt“ Buttons im gleichen Stil
+- optional Hinweis: 24h Notdienst
+
+TECHNIK:
+- Keine Framework-Umstellung.
+- Nutze exakt das, was bereits im Projekt verwendet wird (Tailwind CDN oder CSS-Dateien etc.).
+- Achte auf saubere Pfade: Auf dieser Website funktionieren Links wie /ueber-uns.html.
+- Stelle sicher, dass die Seite responsive ist wie die anderen Seiten.
+
+LIEFERE:
+- Die neue Datei latt/ueber-uns.html
+- Änderungen an latt/index.html (und ggf. weiteren Seiten), sodass der neue Nav-Link überall vorhanden ist.
+- Keine unnötigen Änderungen an anderen Dingen.

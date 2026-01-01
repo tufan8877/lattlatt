@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latt & Co GmbH – 24h Elektriker & Installateur in Wien | Notdienst</title>
+    <meta name="description" content="Latt & Co GmbH – Ihr Meisterbetrieb für Elektro-, Gas-, Wasser- & Heizungsinstallationen in Wien. 24h-Notdienst verfügbar. ☎ 01/481 30 99">
+    <meta name="keywords" content="Elektriker Wien, Installateur Wien, 24h Notdienst, Elektroinstallation, Gasthermen Service, Sanierung Wien">
+    
+    <meta property="og:title" content="Latt & Co GmbH – 24h Elektriker & Installateur in Wien">
+    <meta property="og:description" content="Meisterbetrieb für Elektro-, Gas-, Wasser- & Heizungsinstallationen in Wien. 24h-Notdienst verfügbar.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/images/logo.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Latt & Co GmbH – 24h Elektriker & Installateur in Wien">
+    <meta name="twitter:description" content="Meisterbetrieb für Elektro-, Gas-, Wasser- & Heizungsinstallationen in Wien. 24h-Notdienst verfügbar.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'latt-red': '#E30613',
+                        'latt-blue': '#0066B3',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Latt & Co GmbH",
+        "image": "/assets/images/logo.png",
+        "telephone": "+4314813099",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Wattgasse 49",
+            "addressLocality": "Wien",
+            "postalCode": "1160",
+            "addressCountry": "AT"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 48.2148,
+            "longitude": 16.3319
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+                "opens": "07:00",
+                "closes": "16:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Friday",
+                "opens": "07:00",
+                "closes": "13:00"
+            }
+        ],
+        "priceRange": "$$",
+        "url": "https://www.latt.at"
+    }
+    </script>
+    
+    <style>
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <a href="#main-content" class="skip-link focus:outline-none focus:ring-2 focus:ring-latt-red">Zum Hauptinhalt springen</a>
+    
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-3" role="navigation" aria-label="Hauptnavigation">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center" aria-label="Latt & Co GmbH Startseite">
+                    <img src="/assets/images/logo.png" alt="Latt & Co GmbH Logo" class="h-16 w-auto">
+                </a>
+                
+                <button id="mobile-menu-btn" class="lg:hidden text-gray-700 hover:text-latt-red focus:outline-none focus:ring-2 focus:ring-latt-red p-2" aria-label="Menü öffnen" aria-expanded="false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                
+                <div id="mobile-menu" class="hidden lg:flex lg:items-center lg:space-x-6">
+                    <a href="/" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition" aria-current="page">Start</a>
+                    <a href="/dienstleistungen.html" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Dienstleistungen</a>
+                    <a href="/hausverwaltungen.html" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Hausverwaltungen</a>
+                    <a href="/sanierung.html" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Sanierung</a>
+                    <a href="/notdienst.html" class="block py-2 px-3 text-latt-red hover:text-red-700 font-bold transition">24h Notdienst</a>
+                    <a href="/jobs.html" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Jobs</a>
+                    <a href="/kontakt.html" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Kontakt</a>
+                    <a href="tel:+4314813099" class="bg-latt-red text-white px-6 py-2 rounded-lg font-bold hover:bg-red-700 transition focus:outline-none focus:ring-2 focus:ring-latt-red focus:ring-offset-2">
+                        ☎ Jetzt anrufen
+                    </a>
+                </div>
+            </div>
+            
+            <div id="mobile-menu-panel" class="lg:hidden hidden mt-4 pb-4 space-y-2">
+                <a href="/" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium" aria-current="page">Start</a>
+                <a href="/dienstleistungen.html" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Dienstleistungen</a>
+                <a href="/hausverwaltungen.html" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Hausverwaltungen</a>
+                <a href="/sanierung.html" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Sanierung</a>
+                <a href="/notdienst.html" class="block py-2 px-3 text-latt-red hover:bg-gray-100 rounded font-bold">24h Notdienst</a>
+                <a href="/jobs.html" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Jobs</a>
+                <a href="/kontakt.html" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Kontakt</a>
+                <a href="tel:+4314813099" class="block bg-latt-red text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 text-center">
+                    ☎ Jetzt anrufen
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="bg-gradient-to-br from-gray-50 to-gray-100 py-16 lg:py-24">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+                        24h Notdienst – Elektriker & Installateur in Wien
+                    </h1>
+                    <p class="text-xl lg:text-2xl text-gray-700 mb-8">
+                        Meisterbetrieb für Elektro-, Gas-, Wasser- & Heizungsinstallationen seit über 70 Jahren
+                    </p>
+                    <div class="bg-white rounded-2xl shadow-xl p-8 mb-8">
+                        <p class="text-gray-600 mb-4 font-medium">Rund um die Uhr für Sie erreichbar:</p>
+                        <a href="tel:+4314813099" class="text-5xl lg:text-6xl font-bold text-latt-red hover:text-red-700 transition inline-block mb-6">
+                            01/481 30 99
+                        </a>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                            <a href="tel:+4314813099" class="bg-latt-red text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-700 transition focus:outline-none focus:ring-2 focus:ring-latt-red focus:ring-offset-2 w-full sm:w-auto">
+                                ☎ Jetzt anrufen
+                            </a>
+                            <a href="/kontakt.html" class="bg-latt-blue text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-latt-blue focus:ring-offset-2 w-full sm:w-auto">
+                                📧 Angebot anfordern
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
+                        <span class="flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-latt-red" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Staatlich ausgezeichnetes Unternehmen
+                        </span>
+                        <span class="flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-latt-red" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            25 Mitarbeiter
+                        </span>
+                        <span class="flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-latt-red" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Über 70 Jahre Erfahrung
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                        Unsere Leistungen
+                    </h2>
+                    <p class="text-lg text-gray-600">
+                        Ihr verlässlicher Partner für alle Elektro- und Installationsarbeiten in Wien
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+                    <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition p-6 border border-gray-100">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Elektriker</h3>
+                        <p class="text-gray-600 mb-4">
+                            FI-Schutz, Überprüfungsbefund, Elektroplanung und Energiespartipps
+                        </p>
+                        <a href="/dienstleistungen.html#elektriker" class="text-latt-red font-semibold hover:text-red-700 inline-flex items-center">
+                            Mehr erfahren
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition p-6 border border-gray-100">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Installateur</h3>
+                        <p class="text-gray-600 mb-4">
+                            Thermenservice, Gas-Überprüfung, Heizung, Wasser & Sanitär
+                        </p>
+                        <a href="/dienstleistungen.html#installateur" class="text-latt-red font-semibold hover:text-red-700 inline-flex items-center">
+                            Mehr erfahren
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition p-6 border border-gray-100">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Sanierung</h3>
+                        <p class="text-gray-600 mb-4">
+                            Malen, Mauern, Fliesen – Alles aus einer Hand
+                        </p>
+                        <a href="/sanierung.html" class="text-latt-red font-semibold hover:text-red-700 inline-flex items-center">
+                            Mehr erfahren
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition p-6 border border-gray-100">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Hausverwaltungen</h3>
+                        <p class="text-gray-600 mb-4">
+                            Rahmenverträge, schnelle Reaktionszeiten, professionelle Abrechnung
+                        </p>
+                        <a href="/hausverwaltungen.html" class="text-latt-red font-semibold hover:text-red-700 inline-flex items-center">
+                            Mehr erfahren
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl p-8 lg:p-12">
+                    <div class="grid lg:grid-cols-2 gap-8">
+                        <div>
+                            <h2 class="text-3xl font-bold text-gray-900 mb-6">Öffnungszeiten</h2>
+                            <div class="space-y-3 text-lg">
+                                <div class="flex justify-between">
+                                    <span class="font-medium">Montag – Donnerstag:</span>
+                                    <span>07:00 – 16:00</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-medium">Freitag:</span>
+                                    <span>07:00 – 13:00</span>
+                                </div>
+                                <div class="flex justify-between pt-4 border-t border-gray-200">
+                                    <span class="font-bold text-latt-red">24h-Notdienst:</span>
+                                    <span class="font-bold">rund um die Uhr</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold text-gray-900 mb-6">Kontakt</h2>
+                            <div class="space-y-3 text-lg">
+                                <div>
+                                    <p class="font-medium text-gray-600">Adresse:</p>
+                                    <p>Wattgasse 49<br>1160 Wien</p>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-gray-600">Telefon:</p>
+                                    <a href="tel:+4314813099" class="text-latt-red font-bold hover:text-red-700">01/481 30 99</a>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-gray-600">E-Mail:</p>
+                                    <a href="mailto:office@latt.at" class="text-latt-red font-bold hover:text-red-700">office@latt.at</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-latt-red text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+                    Benötigen Sie sofort Hilfe?
+                </h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">
+                    Unser 24h-Notdienst ist rund um die Uhr für Sie da – bei Stromausfall, Wasserrohrbruch oder anderen Notfällen.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="tel:+4314813099" class="bg-white text-latt-red px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-latt-red">
+                        ☎ 01/481 30 99 – Jetzt anrufen
+                    </a>
+                    <a href="/notdienst.html" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-latt-red transition focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-latt-red">
+                        Mehr zum Notdienst
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Latt & Co GmbH</h3>
+                    <p class="mb-2">Wattgasse 49</p>
+                    <p class="mb-2">1160 Wien</p>
+                    <p class="mb-2">
+                        <a href="tel:+4314813099" class="hover:text-white transition">☎ 01/481 30 99</a>
+                    </p>
+                    <p>
+                        <a href="mailto:office@latt.at" class="hover:text-white transition">office@latt.at</a>
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Öffnungszeiten</h3>
+                    <p class="mb-1">Mo–Do: 07:00–16:00</p>
+                    <p class="mb-3">Fr: 07:00–13:00</p>
+                    <p class="text-latt-red font-bold">24h-Notdienst verfügbar</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Leistungen</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/dienstleistungen.html" class="hover:text-white transition">Elektriker</a></li>
+                        <li><a href="/dienstleistungen.html" class="hover:text-white transition">Installateur</a></li>
+                        <li><a href="/sanierung.html" class="hover:text-white transition">Sanierung</a></li>
+                        <li><a href="/hausverwaltungen.html" class="hover:text-white transition">Hausverwaltungen</a></li>
+                        <li><a href="/notdienst.html" class="hover:text-white transition">24h-Notdienst</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Informationen</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/jobs.html" class="hover:text-white transition">Jobs & Karriere</a></li>
+                        <li><a href="/lehrlinge.html" class="hover:text-white transition">Lehrlinge</a></li>
+                        <li><a href="/kontakt.html" class="hover:text-white transition">Kontakt</a></li>
+                        <li><a href="/impressum.html" class="hover:text-white transition">Impressum</a></li>
+                        <li><a href="/datenschutz.html" class="hover:text-white transition">Datenschutz</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-sm text-center">
+                <p class="mb-2">
+                    © 2025 Latt & Co GmbH. Alle Rechte vorbehalten. | 
+                    UID: ATU 46513606 | 
+                    FN 175913x | 
+                    Mitglied der <a href="https://www.wko.at" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">Wirtschaftskammer Wien</a>
+                </p>
+                <p class="text-gray-400">
+                    Staatlich ausgezeichnetes Unternehmen | Meisterbetrieb seit über 70 Jahren
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

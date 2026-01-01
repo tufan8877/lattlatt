@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über uns – Meisterbetrieb seit über 70 Jahren | Latt & Co GmbH Wien</title>
+    <meta name="description" content="Latt & Co GmbH – Ihr staatlich ausgezeichneter Meisterbetrieb in 1160 Wien. Erfahren Sie mehr über unsere Geschichte, unser Team und unsere Philosophie.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'latt-red': '#E30613',
+                        'latt-blue': '#0066B3',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <a href="#main-content" class="skip-link focus:outline-none focus:ring-2 focus:ring-latt-red">Zum Hauptinhalt springen</a>
+    
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-3" role="navigation" aria-label="Hauptnavigation">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center" aria-label="Latt & Co GmbH Startseite">
+                    <img src="/assets/images/logo.png" alt="Latt & Co GmbH Logo" class="h-16 w-auto">
+                </a>
+                
+                <button id="mobile-menu-btn" class="lg:hidden text-gray-700 hover:text-latt-red focus:outline-none focus:ring-2 focus:ring-latt-red p-2" aria-label="Menü öffnen" aria-expanded="false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                
+                <div id="mobile-menu" class="hidden lg:flex lg:items-center lg:space-x-6">
+                    <a href="/" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Start</a>
+                    <a href="/dienstleistungen.html" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Dienstleistungen</a>
+                    <a href="/hausverwaltungen.html" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Hausverwaltungen</a>
+                    <a href="/sanierung.html" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Sanierung</a>
+                    <a href="/notdienst.html" class="block py-2 px-3 text-latt-red hover:text-red-700 font-bold transition">24h Notdienst</a>
+                    <a href="/ueber-uns.html" class="block py-2 px-3 text-latt-red hover:text-red-700 font-bold transition" aria-current="page">Über uns</a>
+                    <a href="/jobs.html" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Jobs</a>
+                    <a href="/kontakt.html" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Kontakt</a>
+                    <a href="tel:+4314813099" class="bg-latt-red text-white px-6 py-2 rounded-lg font-bold hover:bg-red-700 transition focus:outline-none focus:ring-2 focus:ring-latt-red focus:ring-offset-2">
+                        ☎ Jetzt anrufen
+                    </a>
+                </div>
+            </div>
+            
+            <div id="mobile-menu-panel" class="lg:hidden hidden mt-4 pb-4 space-y-2">
+                <a href="/" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Start</a>
+                <a href="/dienstleistungen.html" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Dienstleistungen</a>
+                <a href="/hausverwaltungen.html" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Hausverwaltungen</a>
+                <a href="/sanierung.html" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Sanierung</a>
+                <a href="/notdienst.html" class="block py-2 px-3 text-latt-red hover:bg-gray-100 rounded font-bold">24h Notdienst</a>
+                <a href="/ueber-uns.html" class="block py-2 px-3 text-latt-red hover:bg-gray-100 rounded font-bold" aria-current="page">Über uns</a>
+                <a href="/jobs.html" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Jobs</a>
+                <a href="/kontakt.html" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Kontakt</a>
+                <a href="tel:+4314813099" class="block bg-latt-red text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 text-center">
+                    ☎ Jetzt anrufen
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="relative h-[400px] lg:h-[500px] flex items-center justify-center text-white overflow-hidden">
+            <div class="absolute inset-0 bg-black/50 z-10"></div>
+            <img src="/assets/images/ueber-uns-autos.jpg" alt="Unsere Einsatzfahrzeuge in Wien" class="absolute inset-0 w-full h-full object-cover">
+            <div class="container mx-auto px-4 relative z-20 text-center">
+                <h1 class="text-4xl lg:text-6xl font-bold mb-6">Über uns</h1>
+                <p class="text-xl lg:text-2xl font-medium max-w-2xl mx-auto">
+                    Ihr staatlich ausgezeichneter Meisterbetrieb seit über 70 Jahren in Wien
+                </p>
+            </div>
+        </section>
+
+        <!-- Über die Firma Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Wer wir sind</h2>
+                            <p class="text-lg text-gray-700 mb-6">
+                                Die Latt & Co GmbH ist Ihr verlässlicher Partner für sämtliche Elektro-, Gas-, Wasser- und Heizungsinstallationen sowie Sanierungen in Wien. Seit unserer Gründung vor über 70 Jahren stehen wir für handwerkliche Präzision, Zuverlässigkeit und höchste Servicequalität.
+                            </p>
+                            <p class="text-lg text-gray-700 mb-6">
+                                Mit unserem Standort in der Wattgasse 49 im 1160 Wien sind wir tief in der Region verwurzelt und betreuen mit Stolz über 1000 Wohnhäuser in ganz Wien für namhafte Hausverwaltungen.
+                            </p>
+                            <p class="text-lg text-gray-700">
+                                Unser Team besteht aus 25 hochqualifizierten Mitarbeitern im Außen- und Innendienst. Besonders wichtig ist uns: Wir setzen ausschließlich auf Eigenpersonal. Bei uns gibt es keine Leiharbeitskräfte – nur echtes Fachpersonal, das unsere Werte teilt.
+                            </p>
+                        </div>
+                        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 shadow-sm">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-6">Fakten & Kompetenz</h3>
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-latt-red mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-gray-700"><strong>Über 70 Jahre</strong> Erfahrung als Meisterbetrieb</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-latt-red mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-gray-700"><strong>25 Mitarbeiter</strong> – 100% Eigenpersonal</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-latt-red mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-gray-700">Betreuung von ca. <strong>1000 Wohnhäusern</strong></span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-latt-red mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-gray-700"><strong>24h Notdienst</strong> für alle Notfälle</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-latt-red mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-gray-700"><strong>Staatlich ausgezeichnet</strong> (Staatswappen)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Staatliche Auszeichnung Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Staatlich ausgezeichnetes Unternehmen</h2>
+                    <p class="text-lg text-gray-700 mb-8">
+                        Als Träger des österreichischen Staatswappens gehören wir zu jenen Unternehmen, die sich durch außergewöhnliche Leistungen um die österreichische Wirtschaft verdient gemacht haben. Diese Auszeichnung ist für uns Verpflichtung und Ansporn zugleich, unseren Kunden stets höchste Qualität zu bieten.
+                    </p>
+                    <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
+                        <div class="flex flex-col items-center">
+                            <img src="/assets/images/wappen-staatlich.png" alt="Staatswappen Österreich" class="h-24 md:h-32 w-auto object-contain mb-3">
+                            <span class="text-gray-600 text-xs font-bold uppercase tracking-widest">Staatswappen</span>
+                        </div>
+                        <div class="h-16 w-px bg-gray-200 hidden md:block"></div>
+                        <div class="flex flex-col items-center">
+                            <img src="/assets/images/wappen-meisterbetrieb.png" alt="Meisterbetrieb Siegel" class="h-24 md:h-32 w-auto object-contain mb-3">
+                            <span class="text-gray-600 text-xs font-bold uppercase tracking-widest">Meisterbetrieb</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Unser Chef Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div class="order-2 lg:order-1">
+                            <h2 class="text-3xl font-bold text-gray-900 mb-6">Unsere Geschäftsführung</h2>
+                            <h3 class="text-2xl font-bold text-latt-red mb-4">KommR Meister Andreas Staudinger</h3>
+                            <p class="text-lg text-gray-700 mb-6">
+                                Unter der Leitung von Kommerzialrat Andreas Staudinger führt die Latt & Co GmbH die Tradition eines echten Wiener Familienbetriebs fort. Als erfahrener Meister seines Fachs legt er besonderen Wert auf die fundierte Ausbildung unserer Mitarbeiter und die persönliche Betreuung unserer Kunden.
+                            </p>
+                            <p class="text-lg text-gray-700">
+                                „Qualität im Handwerk bedeutet für uns, dass der Kunde auch nach Jahren noch mit unserer Arbeit zufrieden ist. Dafür stehen wir mit unserem Namen.“
+                            </p>
+                        </div>
+                        <div class="order-1 lg:order-2">
+                            <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-white aspect-square">
+                                <img src="/assets/images/chef-andreas-staudinger.jpg" alt="KommR Meister Andreas Staudinger" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 bg-latt-red text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+                    Haben Sie Fragen oder benötigen Sie Hilfe?
+                </h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">
+                    Unser Team ist gerne für Sie da – egal ob für geplante Projekte oder im dringenden Notfall.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="tel:+4314813099" class="bg-white text-latt-red px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-latt-red">
+                        ☎ 01/481 30 99 – Jetzt anrufen
+                    </a>
+                    <a href="/kontakt.html" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-latt-red transition focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-latt-red">
+                        Zum Kontaktformular
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Latt & Co GmbH</h3>
+                    <p class="mb-2">Wattgasse 49</p>
+                    <p class="mb-2">1160 Wien</p>
+                    <p class="mb-2">
+                        <a href="tel:+4314813099" class="hover:text-white transition">☎ 01/481 30 99</a>
+                    </p>
+                    <p>
+                        <a href="mailto:office@latt.at" class="hover:text-white transition">office@latt.at</a>
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Öffnungszeiten</h3>
+                    <p class="mb-1">Mo–Do: 07:00–16:00</p>
+                    <p class="mb-3">Fr: 07:00–13:00</p>
+                    <p class="text-latt-red font-bold">24h-Notdienst verfügbar</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Leistungen</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/dienstleistungen.html" class="hover:text-white transition">Elektriker</a></li>
+                        <li><a href="/dienstleistungen.html" class="hover:text-white transition">Installateur</a></li>
+                        <li><a href="/sanierung.html" class="hover:text-white transition">Sanierung</a></li>
+                        <li><a href="/hausverwaltungen.html" class="hover:text-white transition">Hausverwaltungen</a></li>
+                        <li><a href="/notdienst.html" class="hover:text-white transition">24h-Notdienst</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Informationen</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/ueber-uns.html" class="hover:text-white transition">Über uns</a></li>
+                        <li><a href="/jobs.html" class="hover:text-white transition">Jobs & Karriere</a></li>
+                        <li><a href="/lehrlinge.html" class="hover:text-white transition">Lehrlinge</a></li>
+                        <li><a href="/kontakt.html" class="hover:text-white transition">Kontakt</a></li>
+                        <li><a href="/impressum.html" class="hover:text-white transition">Impressum</a></li>
+                        <li><a href="/datenschutz.html" class="hover:text-white transition">Datenschutz</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-sm text-center">
+                <p class="mb-2">
+                    © 2025 Latt & Co GmbH. Alle Rechte vorbehalten. | 
+                    UID: ATU 46513606 | 
+                    FN 175913x | 
+                    Mitglied der <a href="https://www.wko.at" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">Wirtschaftskammer Wien</a>
+                </p>
+                <p class="text-gray-400">
+                    Staatlich ausgezeichnetes Unternehmen | Meisterbetrieb seit über 70 Jahren
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

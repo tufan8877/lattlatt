@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum – Latt & Co GmbH Wien</title>
+    <meta name="robots" content="noindex, nofollow">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'latt-red': '#E30613',
+                        'latt-blue': '#0066B3',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <a href="#main-content" class="skip-link focus:outline-none focus:ring-2 focus:ring-latt-red">Zum Hauptinhalt springen</a>
+    
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-3" role="navigation" aria-label="Hauptnavigation">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center" aria-label="Latt & Co GmbH Startseite">
+                    <img src="/assets/images/logo.png" alt="Latt & Co GmbH Logo" class="h-16 w-auto">
+                </a>
+                
+                <button id="mobile-menu-btn" class="lg:hidden text-gray-700 hover:text-latt-red focus:outline-none focus:ring-2 focus:ring-latt-red p-2" aria-label="Menü öffnen" aria-expanded="false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                
+                <div id="mobile-menu" class="hidden lg:flex lg:items-center lg:space-x-6">
+                    <a href="/" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Start</a>
+                    <a href="/dienstleistungen.html" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Dienstleistungen</a>
+                    <a href="/hausverwaltungen.html" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Hausverwaltungen</a>
+                    <a href="/sanierung.html" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Sanierung</a>
+                    <a href="/notdienst.html" class="block py-2 px-3 text-latt-red hover:text-red-700 font-bold transition">24h Notdienst</a>
+                    <a href="/ueber-uns.html" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Über uns</a>
+                    <a href="/jobs.html" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Jobs</a>
+                    <a href="/kontakt.html" class="block py-2 px-3 text-gray-700 hover:text-latt-red font-medium transition">Kontakt</a>
+                    <a href="tel:+4314813099" class="bg-latt-red text-white px-6 py-2 rounded-lg font-bold hover:bg-red-700 transition focus:outline-none focus:ring-2 focus:ring-latt-red focus:ring-offset-2">
+                        ☎ Jetzt anrufen
+                    </a>
+                </div>
+            </div>
+            
+            <div id="mobile-menu-panel" class="lg:hidden hidden mt-4 pb-4 space-y-2">
+                <a href="/" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Start</a>
+                <a href="/dienstleistungen.html" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Dienstleistungen</a>
+                <a href="/hausverwaltungen.html" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Hausverwaltungen</a>
+                <a href="/sanierung.html" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Sanierung</a>
+                <a href="/notdienst.html" class="block py-2 px-3 text-latt-red hover:bg-gray-100 rounded font-bold">24h Notdienst</a>
+                <a href="/ueber-uns.html" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Über uns</a>
+                <a href="/jobs.html" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Jobs</a>
+                <a href="/kontakt.html" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded font-medium">Kontakt</a>
+                <a href="tel:+4314813099" class="block bg-latt-red text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 text-center">
+                    ☎ Jetzt anrufen
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-4xl font-bold text-gray-900 mb-8">Impressum</h1>
+                    
+                    <div class="prose prose-lg max-w-none">
+                        <section class="mb-8">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4">Angaben gemäß § 5 ECG</h2>
+                            <div class="bg-gray-50 rounded-lg p-6">
+                                <p class="mb-2"><strong>Firmenname:</strong> Latt & Co GmbH</p>
+                                <p class="mb-2"><strong>Rechtlicher Name:</strong> Latt u. Co GmbH.</p>
+                                <p class="mb-2"><strong>Adresse:</strong> Wattgasse 49, 1160 Wien, Österreich</p>
+                                <p class="mb-2"><strong>Telefon:</strong> <a href="tel:+4314813099" class="text-latt-red hover:text-red-700">+43 1 481 30 99</a></p>
+                                <p class="mb-2"><strong>Fax:</strong> +43 1 481 30 99 20</p>
+                                <p class="mb-2"><strong>E-Mail:</strong> <a href="mailto:office@latt.at" class="text-latt-red hover:text-red-700">office@latt.at</a></p>
+                            </div>
+                        </section>
+
+                        <section class="mb-8">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4">Unternehmensgegenstand</h2>
+                            <p class="text-gray-700">Elektro-, Gas-, Wasser- & Heizungsinstallationen, Sanierungen</p>
+                        </section>
+
+                        <section class="mb-8">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4">Geschäftsführer</h2>
+                            <p class="text-gray-700">KommR Andreas Staudinger</p>
+                        </section>
+
+                        <section class="mb-8">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4">Firmenbuchdaten</h2>
+                            <div class="bg-gray-50 rounded-lg p-6">
+                                <p class="mb-2"><strong>UID-Nummer:</strong> ATU 46513606</p>
+                                <p class="mb-2"><strong>Firmenbuchnummer:</strong> FN 175913x</p>
+                                <p class="mb-2"><strong>Firmenbuchgericht:</strong> Handelsgericht Wien</p>
+                                <p class="mb-2"><strong>GLN:</strong> 9110016042442</p>
+                                <p class="mb-2"><strong>Gerichtsstand:</strong> Wien</p>
+                            </div>
+                        </section>
+
+                        <section class="mb-8">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4">Kammermitgliedschaft</h2>
+                            <p class="text-gray-700 mb-2"><strong>Wirtschaftskammer Wien</strong></p>
+                            <p class="text-gray-700 mb-2">WKO-Mitgliedsnummer: 0648381</p>
+                            <p class="mb-2">
+                                <a href="https://www.wko.at" target="_blank" rel="noopener noreferrer" class="text-latt-blue hover:text-blue-700 font-medium">
+                                    www.wko.at
+                                </a>
+                            </p>
+                        </section>
+
+                        <section class="mb-8">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4">Bankverbindung</h2>
+                            <div class="bg-gray-50 rounded-lg p-6">
+                                <p class="mb-2"><strong>Bank:</strong> Erste Bank</p>
+                                <p class="mb-2"><strong>BLZ:</strong> 20111</p>
+                                <p class="mb-2"><strong>Kontonummer:</strong> 04602358</p>
+                                <p class="mb-2"><strong>IBAN:</strong> AT90 2011 1000 0460 2358</p>
+                                <p><strong>BIC:</strong> GIBAATWWXXX</p>
+                            </div>
+                        </section>
+
+                        <section class="mb-8">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4">Berufsrecht</h2>
+                            <p class="text-gray-700 mb-2">Gewerbeordnung: <a href="https://www.ris.bka.gv.at" target="_blank" rel="noopener noreferrer" class="text-latt-blue hover:text-blue-700">www.ris.bka.gv.at</a></p>
+                            <p class="text-gray-700">Aufsichtsbehörde/Gewerbebehörde: Magistrat der Stadt Wien</p>
+                        </section>
+
+                        <section class="mb-8">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4">Haftungsausschluss</h2>
+                            
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 mt-6">Haftung für Inhalte</h3>
+                            <p class="text-gray-700 mb-4">
+                                Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.
+                            </p>
+
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 mt-6">Haftung für Links</h3>
+                            <p class="text-gray-700 mb-4">
+                                Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+                            </p>
+
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 mt-6">Urheberrecht</h3>
+                            <p class="text-gray-700">
+                                Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem österreichischen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+                            </p>
+                        </section>
+
+                        <section class="mb-8">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4">EU-Streitschlichtung</h2>
+                            <p class="text-gray-700 mb-2">
+                                Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+                            </p>
+                            <p class="mb-4">
+                                <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" class="text-latt-blue hover:text-blue-700">
+                                    https://ec.europa.eu/consumers/odr
+                                </a>
+                            </p>
+                            <p class="text-gray-700">
+                                Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+                            </p>
+                        </section>
+
+                        <section>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4">Geschäftsbedingungen</h2>
+                            <p class="text-gray-700">
+                                Geschäftsbedingungen werden projektbezogen vereinbart. Bei Fragen zu unseren Geschäftsbedingungen kontaktieren Sie uns bitte direkt.
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Latt & Co GmbH</h3>
+                    <p class="mb-2">Wattgasse 49</p>
+                    <p class="mb-2">1160 Wien</p>
+                    <p class="mb-2">
+                        <a href="tel:+4314813099" class="hover:text-white transition">☎ 01/481 30 99</a>
+                    </p>
+                    <p>
+                        <a href="mailto:office@latt.at" class="hover:text-white transition">office@latt.at</a>
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Öffnungszeiten</h3>
+                    <p class="mb-1">Mo–Do: 07:00–16:00</p>
+                    <p class="mb-3">Fr: 07:00–13:00</p>
+                    <p class="text-latt-red font-bold">24h-Notdienst verfügbar</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Leistungen</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/dienstleistungen.html" class="hover:text-white transition">Elektriker</a></li>
+                        <li><a href="/dienstleistungen.html" class="hover:text-white transition">Installateur</a></li>
+                        <li><a href="/sanierung.html" class="hover:text-white transition">Sanierung</a></li>
+                        <li><a href="/hausverwaltungen.html" class="hover:text-white transition">Hausverwaltungen</a></li>
+                        <li><a href="/notdienst.html" class="hover:text-white transition">24h-Notdienst</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Informationen</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/ueber-uns.html" class="hover:text-white transition">Über uns</a></li>
+                        <li><a href="/jobs.html" class="hover:text-white transition">Jobs & Karriere</a></li>
+                        <li><a href="/lehrlinge.html" class="hover:text-white transition">Lehrlinge</a></li>
+                        <li><a href="/kontakt.html" class="hover:text-white transition">Kontakt</a></li>
+                        <li><a href="/impressum.html" class="hover:text-white transition">Impressum</a></li>
+                        <li><a href="/datenschutz.html" class="hover:text-white transition">Datenschutz</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-sm text-center">
+                <p class="mb-2">
+                    © 2025 Latt & Co GmbH. Alle Rechte vorbehalten. | 
+                    UID: ATU 46513606 | 
+                    FN 175913x | 
+                    Mitglied der <a href="https://www.wko.at" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">Wirtschaftskammer Wien</a>
+                </p>
+                <p class="text-gray-400">
+                    Staatlich ausgezeichnetes Unternehmen | Meisterbetrieb seit über 70 Jahren
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
